@@ -1,0 +1,36 @@
+/* Sidebar Component Styles */
+
+.sidebar {
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin: 0 0 0.75rem 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list-item span {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+}

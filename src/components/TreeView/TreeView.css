@@ -1,0 +1,68 @@
+.rct-tree-item-button.rct-tree-item-button-focused {
+    font-weight: bold;
+}
+
+.rct-tree-item-li.rct-tree-item-li-focused {
+    background: var(--gray-3) !important;
+}
+
+/* Tree connecting lines using right-angle symbols */
+.rct-tree-item-li {
+    position: relative;
+}
+
+/* Add vertical line for nested items */
+.rct-tree-item-li::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--gray-5, #444);
+    z-index: 0;
+}
+
+/* Add horizontal line connector */
+.rct-tree-item-li::after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    width: 10px;
+    height: 1px;
+    background: var(--gray-5, #444);
+    z-index: 0;
+}
+
+/* Remove vertical line for last child */
+.rct-tree-item-li:last-child::before {
+    height: 16px;
+}
+
+/* Ensure tree item content appears above the lines */
+.rct-tree-item-title-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Add margin to tree items to create space without breaking indentation */
+.rct-tree-item-button {
+    margin-left: 8px;
+}
+
+/* Don't show lines for root level */
+.rct-tree-root > .rct-tree-item-li::before,
+.rct-tree-root > .rct-tree-item-li::after {
+    display: none;
+}
+
+/* Style the expand/collapse arrow to be more subtle */
+.rct-tree-item-arrow {
+    opacity: 0.6;
+    font-size: 0.8em;
+}
+
+.rct-tree-item-arrow:hover {
+    opacity: 1;
+}

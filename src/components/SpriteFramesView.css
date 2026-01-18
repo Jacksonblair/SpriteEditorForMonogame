@@ -1,0 +1,25 @@
+/* Sprite Frames View Component Styles */
+
+.info {
+    margin: 0 0 1rem 0;
+}
+
+.canvas-container {
+    overflow-x: scroll;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    min-width: 0;
+}
+
+canvas {
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.frame-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}

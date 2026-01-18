@@ -1,0 +1,29 @@
+/* Collapsible Window Component Styles */
+
+.collapsible-window {
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.collapsible-title {
+    margin: 0;
+}
+
+.collapsible-trigger {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.collapsible-trigger svg {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,76 @@
+/* Global Styles and App-level Layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+}
+
+.section {
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+}
+
+.section h2 {
+    margin: 0 0 1rem 0;
+}
+
+input[type="file"] {
+    cursor: pointer;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.empty-state {
+    text-align: center;
+}
+
+.empty-state h2 {
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+}
+
+.top-menu-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid var(--gray-4);
+}

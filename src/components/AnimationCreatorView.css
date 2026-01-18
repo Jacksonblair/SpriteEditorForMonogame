@@ -1,0 +1,15 @@
+/* Animation Creator View Component Styles */
+
+.animation-creator {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.animation-creator input {
+    flex: 1;
+}
+
+.selected-frames {
+    margin-top: 0.5rem;
+}
